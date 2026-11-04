@@ -1,0 +1,11 @@
+# Temporary and raw image variants
+profile_backup.jpg
+profile_enhanced.jpg
+profile_ai_enhanced.png
+profile_full.png
+profile_square.png
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini

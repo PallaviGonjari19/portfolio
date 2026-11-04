@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pallavi Gonjari | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+      <div class="loader-logo">PG<span class="dot">.</span></div>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+      <span class="loader-text">Loading Portfolio...</span>
+    </div>
+  </div>
+
+  <!-- Navigation Overlay for Mobile -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Pallavi Gonjari Home">PG<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li style="--i:0"><a href="#home">Home</a></li>
+        <li style="--i:1"><a href="#about">About</a></li>
+        <li style="--i:2"><a href="#skills">Skills</a></li>
+        <li style="--i:3"><a href="#experience">Experience</a></li>
+        <li style="--i:4"><a href="#projects">Projects</a></li>
+        <li style="--i:5"><a href="#certificates">Certificates</a></li>
+        <li style="--i:6"><a href="#contact">Contact</a></li>
+        <li style="--i:7">
+          <a href="Pallavi_Gonjari_Resume.pdf" download class="nav-resume-btn">
+            <i class="fas fa-download"></i> Resume
+          </a>
+        </li>
+      </ul>
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <div class="toggle-track">
+            <span class="toggle-icon sun"><i class="fas fa-sun"></i></span>
+            <span class="toggle-icon moon"><i class="fas fa-moon"></i></span>
+            <div class="toggle-thumb"></div>
+          </div>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Pallavi <br/><span class="highlight">Gonjari</span></h1>
+        <div class="typewriter-wrapper">
+          <span class="typewriter-prefix">I'm a&nbsp;</span>
+          <span class="typewriter-text" id="typewriter"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          Computer Engineering graduate passionate about building elegant web applications 
+          and data-driven solutions. Turning ideas into impactful digital experiences.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="Pallavi_Gonjari_Resume.pdf" download class="btn btn-outline">
+            <i class="fas fa-download"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="mailto:pallavigonjari38@gmail.com" aria-label="Email" data-tooltip="Email Me">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" data-tooltip="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/PallaviGonjari19" target="_blank" aria-label="GitHub" data-tooltip="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="tel:+917559149492" aria-label="Call" data-tooltip="Call Me">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-image-glow"></div>
+        <div class="orbit-ring ring-1">
+          <div class="orbit-dot"></div>
+        </div>
+        <div class="orbit-ring ring-2">
+          <div class="orbit-dot"></div>
+        </div>
+        <div class="hero-image-container">
+          <img src="profile_square.jpg?v=4" alt="Pallavi Gonjari - Software Engineer & ML Developer" class="hero-photo"/>
+          <div class="img-overlay"></div>
+        </div>
+        <div class="floating-card card-1" data-tilt>
+          <i class="fas fa-code"></i>
+          <div>
+            <strong>Full Stack</strong>
+            <span>Developer</span>
+          </div>
+        </div>
+        <div class="floating-card card-2" data-tilt>
+          <i class="fas fa-brain"></i>
+          <div>
+            <strong>ML</strong>
+            <span>Enthusiast</span>
+          </div>
+        </div>
+        <div class="floating-card card-3" data-tilt>
+          <div class="gpa-badge">
+            <span class="gpa-num">8.75</span>
+            <span class="gpa-label">GPA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col" data-aos="fade-right" data-aos-delay="100">
+          <div class="about-img-wrapper">
+            <img src="profile.jpg?v=4" alt="Pallavi Gonjari" class="about-photo"/>
+            <div class="about-img-frame"></div>
+            <div class="about-img-dots"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item" data-count="8.75" data-suffix="">
+              <span class="stat-num">0</span>
+              <span class="stat-label">GPA</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item" data-count="3" data-suffix="+">
+              <span class="stat-num">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item" data-count="3" data-suffix="+">
+              <span class="stat-num">0</span>
+              <span class="stat-label">Certs</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col" data-aos="fade-left" data-aos-delay="200">
+          <h3 class="about-subtitle">Software Engineer & Full Stack Developer</h3>
+          <p class="about-desc">
+            I'm a Computer Engineering graduate from <strong>GSMCOE, Savitribai Phule Pune University</strong>,
+            with a stellar academic record of <strong>8.75 GPA</strong>. My journey in tech
+            has been shaped by a deep passion for crafting meaningful software solutions.
+          </p>
+          <p class="about-desc">
+            With hands-on experience in <strong>Python, Django, ReactJS</strong>, and <strong>Machine Learning</strong>, I 
+            specialize in building full-stack web applications and intelligent systems. I 
+            enjoy the challenge of turning complex problems into clean, efficient code.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div>
+                <strong>B.E, Computer Engineering</strong>
+                <span>GSMCOE, Pune University · 2021–2025</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fas fa-school"></i></div>
+              <div>
+                <strong>Higher Secondary School</strong>
+                <span>Jain Girls High School, Pune · 84% · 2019–2021</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <strong>Pune, Maharashtra</strong>
+                <span>Open to remote & on-site opportunities</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fas fa-briefcase"></i></div>
+              <div>
+                <strong>Seeking Roles</strong>
+                <span>Software Engineer · Application Developer</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-cta">
+            <a href="mailto:pallavigonjari38@gmail.com" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Get In Touch
+            </a>
+            <a href="Pallavi_Gonjari_Resume.pdf" download class="btn btn-outline">
+              <i class="fas fa-file-arrow-down"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="0" data-tilt>
+          <div class="skill-card-icon" style="--icon-color: #7c3aed;"><i class="fas fa-code"></i></div>
+          <h3>Languages</h3>
+          <p class="skill-desc">Core programming languages I build with daily.</p>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Django</span>
+          </div>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="80" data-tilt>
+          <div class="skill-card-icon" style="--icon-color: #ec4899;"><i class="fas fa-globe"></i></div>
+          <h3>Web Technologies</h3>
+          <p class="skill-desc">Frontend and backend technologies for the web.</p>
+          <div class="skill-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">ReactJS</span>
+          </div>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="160" data-tilt>
+          <div class="skill-card-icon" style="--icon-color: #f59e0b;"><i class="fas fa-brain"></i></div>
+          <h3>Machine Learning</h3>
+          <p class="skill-desc">Intelligent models and NLP pipelines.</p>
+          <div class="skill-tags">
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">NLP</span>
+            <span class="tag">TF-IDF</span>
+            <span class="tag">Logistic Reg.</span>
+          </div>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="240" data-tilt>
+          <div class="skill-card-icon" style="--icon-color: #10b981;"><i class="fas fa-database"></i></div>
+          <h3>Database</h3>
+          <p class="skill-desc">Relational databases and query optimization.</p>
+          <div class="skill-tags">
+            <span class="tag">SQL</span>
+            <span class="tag">Joins</span>
+            <span class="tag">Subqueries</span>
+            <span class="tag">Constraints</span>
+          </div>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="320" data-tilt>
+          <div class="skill-card-icon" style="--icon-color: #3b82f6;"><i class="fas fa-layer-group"></i></div>
+          <h3>Libraries</h3>
+          <p class="skill-desc">Data science and computer vision libraries.</p>
+          <div class="skill-tags">
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">OpenCV</span>
+          </div>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="400" data-tilt>
+          <div class="skill-card-icon" style="--icon-color: #f97316;"><i class="fas fa-tools"></i></div>
+          <h3>Tools & Concepts</h3>
+          <p class="skill-desc">Dev tools and core CS fundamentals.</p>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">OOP</span>
+            <span class="tag">DBMS</span>
+            <span class="tag">SDLC</span>
+            <span class="tag">DSA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Work History</span>
+        <h2 class="section-title">My <span class="highlight">Experience</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-connector">
+            <div class="timeline-dot-outer"><div class="timeline-dot"></div></div>
+          </div>
+          <div class="timeline-content" data-tilt data-tilt-max="3">
+            <div class="timeline-header">
+              <div class="tl-left">
+                <span class="timeline-badge">Internship</span>
+                <h3 class="timeline-role">Python Full Stack Development Intern</h3>
+                <span class="timeline-company">
+                  <i class="fas fa-building"></i> Qspiders, Wakad, Pune
+                </span>
+              </div>
+              <div class="tl-right">
+                <div class="timeline-cert-tag">
+                  <i class="fas fa-certificate"></i> Certified
+                </div>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Developed Python-based backend modules and implemented application features using Django and REST APIs.</li>
+              <li>Built responsive web interfaces using HTML, CSS, and JavaScript and integrated frontend with backend services.</li>
+              <li>Debugged application issues and worked with SQL databases to support reliable application functionality.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Python</span><span>Django</span><span>REST APIs</span><span>HTML/CSS</span><span>JavaScript</span><span>SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card featured-project" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-max="6">
+          <div class="project-mockup">
+            <div class="mockup-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup-screen">
+              <i class="fas fa-truck-fast mockup-icon"></i>
+              <span>Logistics Bottleneck & Delay Analyzer</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <div class="project-badge project-badge-featured">
+                <i class="fas fa-star"></i> Featured ML & Analytics
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/PallaviGonjari19/Logistics-Bottleneck-Delay-Analyzer-Data-Analytics-.git" target="_blank" data-tooltip="View GitHub Repo">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://public.tableau.com/views/LogisticsBottleneckandDelayAnalyzer/ExecutiveOverview?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link" target="_blank" data-tooltip="Live Tableau Dashboard">
+                  <i class="fas fa-chart-column"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Logistics Bottleneck & Delay Analyzer</h3>
+            <p class="project-desc">
+              End-to-end data analytics and predictive modeling project analyzing <strong>50,000+ delivery records</strong>. Identifies delay bottlenecks across routes, drivers, hubs, shifts, and weather conditions using Star Schema modeling, Logistic Regression, and interactive drilldown dashboards.
+            </p>
+            <ul class="project-highlights">
+              <li>Modeled 50K+ records in Star Schema (1 Fact + 7 Dimensions)</li>
+              <li>3 Drilldown Dashboards: Executive Overview, Operations & Root Causes</li>
+              <li>Identified critical delay triggers (foggy weather, shifts, weekend delivery trends)</li>
+            </ul>
+            <div class="project-tech">
+              <span>Python</span><span>Logistic Regression</span><span>Tableau</span><span>Data Analytics</span><span>Star Schema</span><span>Figma</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://public.tableau.com/views/LogisticsBottleneckandDelayAnalyzer/ExecutiveOverview?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link" target="_blank" class="project-btn project-btn-primary">
+                <i class="fas fa-chart-pie"></i> Live Tableau Demo
+              </a>
+              <a href="https://github.com/PallaviGonjari19/Logistics-Bottleneck-Delay-Analyzer-Data-Analytics-.git" target="_blank" class="project-btn project-btn-secondary">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-tilt data-tilt-max="6">
+          <div class="project-mockup">
+            <div class="mockup-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup-screen">
+              <i class="fas fa-shield-alt mockup-icon"></i>
+              <span>Cyberbullying Detection</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <div class="project-badge">April 2025</div>
+              <div class="project-links">
+                <a href="https://github.com/PallaviGonjari19" target="_blank" data-tooltip="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Cyberbullying Detection</h3>
+            <p class="project-desc">
+              A Flask web application for real-time text classification using NLP. Integrated
+              TF-IDF text processing and Logistic Regression for automated detection of 
+              cyberbullying content with a clean, responsive UI.
+            </p>
+            <ul class="project-highlights">
+              <li>Real-time text classification engine</li>
+              <li>TF-IDF + Logistic Regression ML pipeline</li>
+              <li>Full frontend & backend integration</li>
+            </ul>
+            <div class="project-tech">
+              <span>Python</span><span>Flask</span><span>HTML/CSS</span><span>TF-IDF</span><span>Logistic Regression</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/PallaviGonjari19" target="_blank" class="project-btn project-btn-secondary">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300" data-tilt data-tilt-max="6">
+          <div class="project-mockup">
+            <div class="mockup-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup-screen">
+              <i class="fas fa-clipboard-list mockup-icon"></i>
+              <span>Complaint Tracker System</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <div class="project-badge">July 2026</div>
+              <div class="project-links">
+                <a href="https://github.com/PallaviGonjari19" target="_blank" data-tooltip="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Complaint Tracker System</h3>
+            <p class="project-desc">
+              A Django-based complaint management application for submitting, tracking, and
+              monitoring user complaints with full authentication, workflow management,
+              and real-time status updates.
+            </p>
+            <ul class="project-highlights">
+              <li>User authentication & role management</li>
+              <li>Status tracking: Pending → In Progress → Resolved</li>
+              <li>Full CRUD operations with SQL backend</li>
+            </ul>
+            <div class="project-tech">
+              <span>Python</span><span>Django</span><span>SQL</span><span>HTML/CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/PallaviGonjari19" target="_blank" class="project-btn project-btn-secondary">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="certificates section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">My <span class="highlight">Certificates</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card" data-aos="flip-left" data-aos-delay="0">
+          <div class="cert-ribbon">Certified</div>
+          <div class="cert-front">
+            <div class="cert-icon" style="--c:#7c3aed">
+              <i class="fas fa-python" style="font-family:sans-serif; font-style:normal; font-size:1.5rem">Py</i>
+            </div>
+            <h3>Python Full Stack Development</h3>
+            <span class="cert-issuer"><i class="fas fa-building"></i> Qspiders</span>
+            <p>Comprehensive full-stack training in Python, Django, web development, and database management.</p>
+          </div>
+        </div>
+        <div class="cert-card" data-aos="flip-left" data-aos-delay="150">
+          <div class="cert-ribbon google-ribbon">Professional</div>
+          <div class="cert-front">
+            <div class="cert-icon" style="--c:#4285f4">
+              <i class="fab fa-google"></i>
+            </div>
+            <h3>Google Data Analytics Professional Certificate</h3>
+            <span class="cert-issuer"><i class="fab fa-google"></i> Google · 2025</span>
+            <p>Professional-level certification covering data analysis, visualization, and analytics workflows.</p>
+          </div>
+        </div>
+        <div class="cert-card" data-aos="flip-left" data-aos-delay="300">
+          <div class="cert-ribbon" style="background:linear-gradient(135deg,#e8500a,#f59e0b)">Certified</div>
+          <div class="cert-front">
+            <div class="cert-icon" style="--c:#f59e0b">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3>Tableau Certified Data Analyst</h3>
+            <span class="cert-issuer"><i class="fas fa-graduation-cap"></i> Udemy · 2025</span>
+            <p>Advanced data visualization and analytics using Tableau for business intelligence solutions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Reach Out</span>
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+        <div class="section-line"></div>
+        <p class="section-desc">
+          I'm currently open to new opportunities. Whether you have a question, 
+          a project idea, or just want to say hi — my inbox is always open!
+        </p>
+      </div>
+
+      <!-- Download Resume Banner -->
+      <div class="resume-banner" data-aos="zoom-in" data-aos-delay="100">
+        <div class="resume-banner-left">
+          <div class="resume-icon"><i class="fas fa-file-pdf"></i></div>
+          <div>
+            <h4>Download My Resume</h4>
+            <p>Get a full overview of my skills, experience & education</p>
+          </div>
+        </div>
+        <a href="Pallavi_Gonjari_Resume.pdf" download class="btn btn-primary resume-download-btn">
+          <i class="fas fa-file-arrow-down"></i>
+          <span>Download PDF</span>
+        </a>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+          <div class="contact-item">
+            <div class="contact-item-icon" style="--c:#7c3aed"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:pallavigonjari38@gmail.com">pallavigonjari38@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon" style="--c:#10b981"><i class="fas fa-phone"></i></div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+917559149492">+91 7559149492</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon" style="--c:#0077b5"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <strong>LinkedIn</strong>
+              <a href="https://linkedin.com" target="_blank">Connect on LinkedIn</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon" style="--c:#333"><i class="fab fa-github"></i></div>
+            <div>
+              <strong>GitHub</strong>
+              <a href="https://github.com/PallaviGonjari19" target="_blank">github.com/PallaviGonjari19</a>
+            </div>
+          </div>
+
+          <div class="availability-card">
+            <div class="avail-dot"></div>
+            <div>
+              <strong>Currently Available</strong>
+              <p>Open to full-time roles, internships & freelance projects</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" data-aos="fade-left" data-aos-delay="200">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <div class="input-wrapper">
+                <i class="fas fa-user"></i>
+                <input type="text" id="name" placeholder="Jane Doe" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <div class="input-wrapper">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" placeholder="jane@example.com" required/>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <div class="input-wrapper">
+              <i class="fas fa-tag"></i>
+              <input type="text" id="subject" placeholder="Job Opportunity / Project Collaboration"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Hi Pallavi, I'd love to discuss..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <i class="fas fa-paper-plane"></i> <span>Send Message</span>
+          </button>
+          <p class="form-note" id="formMsg"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">PG<span class="dot">.</span></div>
+      <p>Designed &amp; Built with <i class="fas fa-heart"></i> by <strong>Pallavi Gonjari</strong></p>
+      <div class="footer-socials">
+        <a href="mailto:pallavigonjari38@gmail.com" data-tooltip="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com" target="_blank" data-tooltip="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/PallaviGonjari19" target="_blank" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+      <a href="Pallavi_Gonjari_Resume.pdf" download class="btn btn-outline footer-resume-btn">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+      <p class="footer-copy">&copy; 2025 Pallavi Gonjari · All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
