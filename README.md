@@ -23,10 +23,14 @@ A modern, responsive, and interactive personal portfolio website showcasing my s
 
 ## 🌟 Key Features
 
+- **🍱 Modern Bento Grid Layout**: Apple/Linear-inspired modular layout featuring live ticking IST clock with beacon animation, developer Python class card, verified university credentials, and impact counters.
+- **💻 Interactive Developer CLI Terminal (`Ctrl+K`)**: In-browser bash terminal modal and floating action pill. Supports interactive commands (`help`, `about`, `skills`, `projects`, `resume`, `contact`, `theme`, `clear`, and Easter egg `sudo hire`).
+- **💡 Dynamic Spotlight Lighting**: Linear/Vercel-style radial cursor illumination tracking across cards.
+- **🗂️ Interactive Project Filters**: Real-time category filtering (`All`, `ML & Analytics`, `Full Stack & Web`).
+- **🔊 Web Audio API Sound Synthesizer**: Modern micro-feedback tones for interactions with navbar toggle.
+- **🎉 Fullscreen Canvas Confetti**: Physics-based celebration confetti on resume download, form submit, and `sudo hire`.
 - **🎨 Modern Dark & Light Mode**: Seamless theme switching with persistent localStorage memory.
-- **📱 Fluid Mobile Responsiveness**: Carefully optimized for phones, tablets, and wide monitors.
-- **🍔 Smooth Animated Mobile Drawer**: Glassmorphic drop-down menu with an animated hamburger icon and backdrop blur.
-- **✨ Canvas Particle Network & Micro-Interactions**: Real-time particle connections, 3D card tilt effects, dynamic typewriter, and animated stat counters.
+- **📱 Fluid Mobile Responsiveness**: Smooth glassmorphic animated navigation menu and responsive typography.
 - **📄 One-Click Resume Download**: Direct download button for my up-to-date PDF resume.
 - **🚀 Featured Projects**:
   - **Logistics Bottleneck & Delay Analyzer** (Data Analytics, Logistic Regression, Star Schema & Interactive Tableau Dashboards)
