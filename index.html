@@ -173,119 +173,130 @@
         <h2 class="section-title">About <span class="highlight">Me</span></h2>
         <div class="section-line"></div>
       </div>
-      <!-- Modern Interactive Bento Grid -->
-      <div class="bento-grid">
 
-        <!-- Bento Card 1: Main Profile Card -->
-        <div class="bento-card bento-profile spotlight-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="bento-profile-inner">
+      <div class="about-grid">
+        <!-- Left Column: Visual Profile Card & Stats -->
+        <div class="about-image-col" data-aos="fade-right" data-aos-delay="100">
+          <div class="about-card-modern spotlight-card">
             <div class="about-img-wrapper">
               <img src="profile.jpg?v=4" alt="Pallavi Gonjari - Software Engineer" class="about-photo"/>
               <div class="about-img-frame"></div>
-              <div class="verified-badge"><i class="fas fa-circle-check"></i> Open to Work</div>
-            </div>
-            <div class="bento-profile-text">
-              <span class="role-pill"><i class="fas fa-terminal"></i> Software Engineer</span>
-              <h3 class="bento-name">Pallavi Gonjari</h3>
-              <p class="about-desc">
-                Computer Engineering graduate from <strong>GSMCOE, Savitribai Phule Pune University</strong> with a stellar <strong>8.75 GPA</strong>. Passionate about building full-stack web applications, clean REST APIs, and predictive machine learning models.
-              </p>
-              <div class="bento-tags-cloud">
-                <span class="bento-mini-tag"><i class="fab fa-python"></i> Python</span>
-                <span class="bento-mini-tag"><i class="fas fa-server"></i> Django</span>
-                <span class="bento-mini-tag"><i class="fab fa-react"></i> ReactJS</span>
-                <span class="bento-mini-tag"><i class="fas fa-brain"></i> Machine Learning</span>
-                <span class="bento-mini-tag"><i class="fas fa-database"></i> SQL</span>
+              <div class="about-badge-status">
+                <span class="badge-beacon"></span>
+                <span>Open to Work</span>
               </div>
-              <div class="about-cta">
-                <a href="mailto:pallavigonjari38@gmail.com" class="btn btn-primary btn-sm">
-                  <i class="fas fa-paper-plane"></i> Get In Touch
-                </a>
-                <a href="Pallavi_Gonjari_Resume.pdf" download class="btn btn-outline btn-sm">
-                  <i class="fas fa-file-arrow-down"></i> Download CV
-                </a>
+              <div class="about-badge-degree">
+                <i class="fas fa-graduation-cap"></i>
+                <span>SPPU · 8.75 GPA</span>
               </div>
             </div>
-          </div>
-        </div>
 
-        <!-- Bento Card 2: Live Location & Local Time Widget -->
-        <div class="bento-card bento-clock spotlight-card" data-aos="fade-up" data-aos-delay="150">
-          <div class="bento-card-header">
-            <span class="bento-tag"><i class="fas fa-location-dot"></i> Location &amp; Time</span>
-            <div class="pulse-beacon" title="Live status: Active">
-              <span class="beacon-ring"></span>
-              <span class="beacon-dot"></span>
+            <!-- Stats Ribbon -->
+            <div class="about-stats">
+              <div class="stat-item" data-count="8.75" data-suffix="">
+                <span class="stat-num">8.75</span>
+                <span class="stat-label">Engineering GPA</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item" data-count="3" data-suffix="+">
+                <span class="stat-num">3+</span>
+                <span class="stat-label">Live Projects</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item" data-count="3" data-suffix="">
+                <span class="stat-num">3</span>
+                <span class="stat-label">Certifications</span>
+              </div>
             </div>
-          </div>
-          <div class="clock-display">
-            <div class="live-time" id="liveTime">--:--:-- --</div>
-            <div class="time-meta"><i class="fas fa-map-pin"></i> Pune, Maharashtra, India (IST · UTC+5:30)</div>
-          </div>
-          <div class="work-status-pill">
-            <i class="fas fa-briefcase"></i> Seeking Full-Time Roles &amp; Remote Opportunities
-          </div>
-        </div>
 
-        <!-- Bento Card 3: Interactive Developer Code Block -->
-        <div class="bento-card bento-code spotlight-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="bento-card-header">
-            <span class="bento-tag"><i class="fas fa-code"></i> Identity</span>
-            <span class="code-tab-label"><i class="fab fa-python"></i> developer.py</span>
-          </div>
-          <div class="code-wrapper">
-            <pre class="code-snippet"><code><span class="c-keyw">class</span> <span class="c-cls">SoftwareEngineer</span>:
-    name = <span class="c-str">"Pallavi Gonjari"</span>
-    degree = <span class="c-str">"B.E. Computer Engineering"</span>
-    gpa = <span class="c-num">8.75</span>
-    focus = [<span class="c-str">"Python/Django"</span>, <span class="c-str">"Data Analytics"</span>, <span class="c-str">"ML"</span>]
-    passion = <span class="c-str">"Turning data &amp; code into impact"</span>
-</code></pre>
-          </div>
-        </div>
-
-        <!-- Bento Card 4: Education & Savitribai Phule Pune University -->
-        <div class="bento-card bento-edu spotlight-card" data-aos="fade-up" data-aos-delay="250">
-          <div class="bento-card-header">
-            <span class="bento-tag"><i class="fas fa-graduation-cap"></i> Education</span>
-            <span class="gpa-pill"><i class="fas fa-star"></i> 8.75 GPA</span>
-          </div>
-          <div class="edu-body">
-            <h4 class="edu-degree">B.E, Computer Engineering</h4>
-            <span class="edu-uni"><i class="fas fa-university"></i> GSMCOE, Savitribai Phule Pune University</span>
-            <span class="edu-duration"><i class="far fa-calendar-alt"></i> 2021 – 2025 · Distinction</span>
-            <div class="hsc-subline">
-              <span>Higher Secondary School</span>
-              <strong>Jain Girls High School, Pune · 84% (2019–2021)</strong>
+            <!-- Quick Info Row -->
+            <div class="about-quick-info">
+              <div class="quick-info-item">
+                <i class="fas fa-location-dot"></i>
+                <span>Pune, Maharashtra, India</span>
+              </div>
+              <div class="quick-info-item">
+                <i class="fas fa-briefcase"></i>
+                <span>Full Stack &amp; ML Engineer</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Bento Card 5: Highlights & Impact Stats -->
-        <div class="bento-card bento-metrics spotlight-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="bento-card-header">
-            <span class="bento-tag"><i class="fas fa-chart-line"></i> Impact Numbers</span>
+        <!-- Right Column: Narrative, Pillars & Tech Tags -->
+        <div class="about-text-col" data-aos="fade-left" data-aos-delay="200">
+          <div class="about-kicker">
+            <i class="fas fa-code"></i> Software Engineer &amp; Data Analyst
           </div>
-          <div class="bento-metrics-grid">
-            <div class="metric-cell">
-              <span class="metric-digit stat-num" data-count="8.75" data-suffix="">8.75</span>
-              <span class="metric-desc">B.E. Engineering GPA</span>
+          <h3 class="about-headline">
+            Transforming Complex Data &amp; Ideas into Elegant, High-Performance Software.
+          </h3>
+          <p class="about-desc">
+            I am a Computer Engineering graduate from <strong>GSMCOE, Savitribai Phule Pune University</strong> with a stellar academic distinction of <strong>8.75 CGPA</strong>. I combine solid computer science fundamentals with hands-on, practical software development experience.
+          </p>
+          <p class="about-desc">
+            My work bridges modern <strong>Full Stack Engineering</strong> (React, Django, Node.js, and SQL) with <strong>Machine Learning &amp; Analytics</strong> (Logistic Regression, exploratory data analysis, and Tableau). Whether building predictive delay models or creating responsive web applications, I focus on clean code, intuitive user experiences, and measurable real-world impact.
+          </p>
+
+          <!-- 4 Feature Highlights Grid -->
+          <div class="about-highlights-grid">
+            <div class="highlight-card">
+              <div class="highlight-icon" style="--c:#7c3aed"><i class="fas fa-layer-group"></i></div>
+              <div>
+                <strong>Full Stack Development</strong>
+                <p>Modular, responsive frontends paired with robust REST APIs in Python &amp; Django.</p>
+              </div>
             </div>
-            <div class="metric-cell">
-              <span class="metric-digit stat-num" data-count="50" data-suffix="K+">50K+</span>
-              <span class="metric-desc">Records Analyzed</span>
+            <div class="highlight-card">
+              <div class="highlight-icon" style="--c:#ec4899"><i class="fas fa-chart-pie"></i></div>
+              <div>
+                <strong>ML &amp; Data Analytics</strong>
+                <p>Predictive modeling with Logistic Regression, feature engineering &amp; Tableau insights.</p>
+              </div>
             </div>
-            <div class="metric-cell">
-              <span class="metric-digit stat-num" data-count="3" data-suffix="+">3+</span>
-              <span class="metric-desc">Featured Projects</span>
+            <div class="highlight-card">
+              <div class="highlight-icon" style="--c:#10b981"><i class="fas fa-database"></i></div>
+              <div>
+                <strong>Database Architecture</strong>
+                <p>Relational schema design, SQL query tuning, and structured data integrity.</p>
+              </div>
             </div>
-            <div class="metric-cell">
-              <span class="metric-digit stat-num" data-count="3" data-suffix="">3</span>
-              <span class="metric-desc">Certifications</span>
+            <div class="highlight-card">
+              <div class="highlight-icon" style="--c:#38bdf8"><i class="fas fa-bolt"></i></div>
+              <div>
+                <strong>Problem Solving &amp; Agility</strong>
+                <p>Fast learner, clean coding standards, collaborative mindset, and rapid delivery.</p>
+              </div>
             </div>
+          </div>
+
+          <!-- Tech Skills Pills -->
+          <div class="about-tech-pills">
+            <span class="tech-pill"><i class="fab fa-python"></i> Python</span>
+            <span class="tech-pill"><i class="fas fa-server"></i> Django</span>
+            <span class="tech-pill"><i class="fab fa-react"></i> ReactJS</span>
+            <span class="tech-pill"><i class="fas fa-brain"></i> Machine Learning</span>
+            <span class="tech-pill"><i class="fas fa-chart-line"></i> Tableau</span>
+            <span class="tech-pill"><i class="fas fa-database"></i> MySQL</span>
+            <span class="tech-pill"><i class="fab fa-git-alt"></i> Git &amp; GitHub</span>
+          </div>
+
+          <!-- CTAs -->
+          <div class="about-cta">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i>
+              <span>Get In Touch</span>
+            </a>
+            <a href="Pallavi_Gonjari_Resume.pdf" download class="btn btn-outline">
+              <i class="fas fa-file-arrow-down"></i>
+              <span>Download CV</span>
+            </a>
+            <a href="#projects" class="btn btn-ghost">
+              <span>View Projects</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
         </div>
-
       </div>
     </div>
   </section>

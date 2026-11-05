@@ -23,7 +23,7 @@ A modern, responsive, and interactive personal portfolio website showcasing my s
 
 ## 🌟 Key Features
 
-- **🍱 Modern Bento Grid Layout**: Apple/Linear-inspired modular layout featuring live ticking IST clock with beacon animation, developer Python class card, verified university credentials, and impact counters.
+- **💎 Refined & Elegant About Me Showcase**: A clean, modern two-column profile with authentic portrait, dynamic spotlight lighting, academic distinction highlights (8.75 CGPA · SPPU Pune), interactive strength pillars, and impact metrics.
 - **💻 Interactive Developer CLI Terminal (`Ctrl+K`)**: In-browser bash terminal modal and floating action pill. Supports interactive commands (`help`, `about`, `skills`, `projects`, `resume`, `contact`, `theme`, `clear`, and Easter egg `sudo hire`).
 - **💡 Dynamic Spotlight Lighting**: Linear/Vercel-style radial cursor illumination tracking across cards.
 - **🗂️ Interactive Project Filters**: Real-time category filtering (`All`, `ML & Analytics`, `Full Stack & Web`).
