@@ -1,29 +1,46 @@
 # 💼 Pallavi Gonjari - Developer Portfolio
 
-A modern, responsive, and interactive personal portfolio website showcasing my software engineering projects, technical skills, certifications, and experience.
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-pallavigonjari19.github.io/portfolio-7c3aed?style=for-the-badge&logo=googlechrome&logoColor=white)](https://pallavigonjari19.github.io/portfolio/)
+[![GitHub](https://img.shields.io/badge/GitHub-PallaviGonjari19-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PallaviGonjari19)
+
+> 🚀 **Explore the live portfolio website here**:  
+> 👉 **[https://pallavigonjari19.github.io/portfolio/](https://pallavigonjari19.github.io/portfolio/)**
+
+A modern, responsive, and interactive personal portfolio website showcasing my software engineering projects, data analytics dashboards, machine learning models, technical skills, and experience.
 
 ![Portfolio Preview](profile_square.jpg)
 
+---
+
+## 🔗 Live Website
+
+| Link | URL |
+|---|---|
+| 🌐 **Live Portfolio** | **[https://pallavigonjari19.github.io/portfolio/](https://pallavigonjari19.github.io/portfolio/)** |
+| 📄 **Direct Resume** | **[Download Resume PDF](https://pallavigonjari19.github.io/portfolio/Pallavi_Gonjari_Resume.pdf)** |
+
+---
+
 ## 🌟 Key Features
 
-- **🎨 Modern Dark & Light Mode**: Smooth theme toggling with persistent user preference storage.
-- **📱 Fully Responsive Design**: Seamless fluid experience across mobile phones, tablets, laptops, and ultra-wide desktops.
-- **🍔 Animated Mobile Navigation**: Smooth glassmorphic dropdown with animated hamburger icon and touch-friendly interactions.
-- **✨ Interactive Canvas Particles & Micro-interactions**: Floating badges, vanilla 3D tilt effects, typewriter animations, and live statistic counters.
-- **📄 Instant Resume Download**: One-click download of my up-to-date resume in PDF format.
-- **🚀 Featured Projects Showcase**:
-  - **Logistics Bottleneck & Delay Analyzer** (Data Analytics, Logistic Regression, Star Schema & Tableau)
-  - **Cyberbullying Detection** (NLP, TF-IDF & Logistic Regression)
-  - **Complaint Tracker System** (Django Full Stack, Authentication & SQL)
-- **📬 Interactive Contact Section**: Responsive contact form and quick direct links to Email, LinkedIn, and GitHub.
+- **🎨 Modern Dark & Light Mode**: Seamless theme switching with persistent localStorage memory.
+- **📱 Fluid Mobile Responsiveness**: Carefully optimized for phones, tablets, and wide monitors.
+- **🍔 Smooth Animated Mobile Drawer**: Glassmorphic drop-down menu with an animated hamburger icon and backdrop blur.
+- **✨ Canvas Particle Network & Micro-Interactions**: Real-time particle connections, 3D card tilt effects, dynamic typewriter, and animated stat counters.
+- **📄 One-Click Resume Download**: Direct download button for my up-to-date PDF resume.
+- **🚀 Featured Projects**:
+  - **Logistics Bottleneck & Delay Analyzer** (Data Analytics, Logistic Regression, Star Schema & Interactive Tableau Dashboards)
+  - **Cyberbullying Detection** (NLP, TF-IDF Text Classification & Logistic Regression with Flask)
+  - **Complaint Tracker System** (Django Full Stack, Authentication, CRUD & SQL Database)
+- **📬 Contact & Socials**: Functional contact form with quick links to Email, LinkedIn, and GitHub.
 
 ---
 
 ## 🛠️ Built With
 
-- **HTML5 & CSS3** (Custom modern CSS variables, Grid, Flexbox, Glassmorphism)
-- **JavaScript (ES6+)** (Canvas particle animation, typewriter engine, theme switcher)
-- **Font Awesome 6** (Modern vector icon set)
+- **HTML5 & Modern CSS3** (CSS Custom Variables, Flexbox, Grid & Glassmorphism)
+- **Vanilla JavaScript (ES6+)** (Canvas particle physics, typewriter engine, theme controller)
+- **Font Awesome 6** (Modern icon set)
 - **Google Fonts** (Inter, Playfair Display, Space Mono)
 - **AOS (Animate On Scroll)** & **VanillaTilt.js**
 
@@ -33,27 +50,20 @@ A modern, responsive, and interactive personal portfolio website showcasing my s
 
 ```text
 ├── index.html                  # Main portfolio website
-├── style.css                   # Responsive design, light/dark themes & animations
-├── script.js                   # Particles, typewriter, mobile navigation & themes
+├── style.css                   # Responsive layout, dark/light themes & styling
+├── script.js                   # Particle engine, typewriter, theme switcher & mobile nav
 ├── Pallavi_Gonjari_Resume.pdf  # Downloadable PDF resume
-├── profile.jpg                 # Full portrait photo
-├── profile_square.jpg          # Centered avatar photo
-└── README.md                   # Repository documentation
+├── profile.jpg                 # High-definition portrait (816x1128px)
+├── profile_square.jpg          # Centered square avatar (760x760px)
+├── .gitignore                  # Git ignore rules
+└── README.md                   # Repository documentation & live link
 ```
-
----
-
-## 🌐 Deploy to GitHub Pages
-
-1. Go to your repository on GitHub.
-2. Navigate to **Settings** > **Pages**.
-3. Under **Build and deployment** > **Branch**, select `main` and `/ (root)`.
-4. Click **Save**. Your portfolio will be live at `https://PallaviGonjari19.github.io/<repo-name>/`!
 
 ---
 
 ## 📬 Contact Me
 
-- **Email**: [pallavigonjari38@gmail.com](mailto:pallavigonjari38@gmail.com)
-- **LinkedIn**: [LinkedIn Profile](https://linkedin.com)
-- **GitHub**: [github.com/PallaviGonjari19](https://github.com/PallaviGonjari19)
+- **🌐 Portfolio**: [pallavigonjari19.github.io/portfolio](https://pallavigonjari19.github.io/portfolio/)
+- **📧 Email**: [pallavigonjari38@gmail.com](mailto:pallavigonjari38@gmail.com)
+- **💼 LinkedIn**: [linkedin.com/in/pallavigonjari](https://linkedin.com)
+- **🐙 GitHub**: [github.com/PallaviGonjari19](https://github.com/PallaviGonjari19)
