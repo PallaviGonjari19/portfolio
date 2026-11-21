@@ -188,11 +188,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // =============================================
 const texts = [
   'Full Stack Developer',
+  'Python & Django Developer',
+  'Application Developer',
+  'Software Engineer',
   'Data & ML Analyst',
-  'Python Engineer',
-  'ML & Logistic Regression Dev',
-  'Tableau Analytics Specialist',
-  'Django Developer',
 ];
 let tIdx = 0, cIdx = 0, isDeleting = false;
 const typeEl = document.getElementById('typewriter');
@@ -794,7 +793,8 @@ function executeTerminalCommand(rawCmd) {
 <strong>AVAILABLE COMMANDS:</strong>
   • <span style="color:#a78bfa;">about</span>      : Learn about Pallavi Gonjari & background
   • <span style="color:#a78bfa;">skills</span>     : View technical skills stack & toolchain
-  • <span style="color:#a78bfa;">projects</span>   : Inspect featured projects & repositories
+  • <span style="color:#a78bfa;">experience</span> : View internship history & roles
+  • <span style="color:#a78bfa;">projects</span>   : Inspect featured projects & repositories (Grievio, etc.)
   • <span style="color:#a78bfa;">resume</span>     : Download or preview full PDF CV
   • <span style="color:#a78bfa;">contact</span>    : Direct email, LinkedIn, and phone contacts
   • <span style="color:#a78bfa;">theme</span>      : Toggle light / dark mode
@@ -804,33 +804,52 @@ function executeTerminalCommand(rawCmd) {
 
     case 'about':
       resp.innerHTML = `
-<strong>Pallavi Gonjari</strong> — Full Stack & Machine Learning Engineer
+<strong>Pallavi Gonjari</strong> — Full Stack & Application Developer
 📍 Location: Pune, Maharashtra, India (IST / UTC+5:30)
 🎓 Degree: B.E. in Computer Engineering, Savitribai Phule Pune University (8.75 CGPA)
-🚀 Passion: Crafting high-performance web systems and ML analytics models.`;
+💼 Current: Application Trainee Intern at TechTech IT Services
+🚀 Passion: Crafting robust web applications, REST APIs, and database-driven solutions.`;
       break;
 
     case 'skills':
       resp.innerHTML = `
-<strong>CORE SKILLS STACK:</strong>
-  • <strong>Languages:</strong> Python, Java, JavaScript (ES6+), C/C++, HTML5, CSS3, SQL
-  • <strong>Frameworks:</strong> React, Django, Node.js, Express, Bootstrap, Tailwind
-  • <strong>Data & ML:</strong> Scikit-Learn, Logistic Regression, Pandas, NumPy, Tableau, EDA
-  • <strong>Databases & Tools:</strong> MySQL, MongoDB, Git/GitHub, REST APIs, VS Code`;
+<strong>CORE SKILLS STACK (from Resume):</strong>
+  • <strong>Languages:</strong> Python (OOP, Functions, Exception Handling), Java, C/C++, HTML5, CSS3, JavaScript
+  • <strong>Frameworks:</strong> Django, Flask, ReactJS, Tailwind CSS
+  • <strong>Database & DBMS:</strong> SQL, PostgreSQL, MySQL, CRUD Operations
+  • <strong>Core Concepts:</strong> DBMS, Data Structures & Algorithms, REST APIs, SDLC, OOP Design
+  • <strong>Machine Learning:</strong> Scikit-learn, TF-IDF, Logistic Regression, Tableau
+  • <strong>Tools:</strong> Git, GitHub, VS Code, Postman`;
+      break;
+
+    case 'experience':
+    case 'history':
+    case 'work':
+      resp.innerHTML = `
+<strong>WORK EXPERIENCE:</strong>
+  1. <strong>TechTech IT Services</strong> (07/2026 – Present)
+     • Application Trainee Intern · Pune, India
+     • Contributing to multi-module application development, workflow optimization, testing & debugging.
+
+  2. <strong>Qspiders, Wakad</strong> (10/2025 – 07/2026)
+     • Python Full Stack Development Intern · Pune, India
+     • Built backend modules in Django & REST APIs, responsive web UIs, and integrated SQL databases.`;
       break;
 
     case 'projects':
       resp.innerHTML = `
 <strong>FEATURED PROJECTS:</strong>
-  1. <strong>Logistics Bottleneck & Delay Analyzer</strong> (ML & Analytics)
-     • Logistic regression model predicting shipment delays with 85%+ accuracy.
-     • <a href="https://github.com/PallaviGonjari19/Logistics-Bottleneck-Delay-Analyzer-Data-Analytics-.git" target="_blank">View GitHub Repo ↗</a>
+  1. <strong>Grievio — Campus Grievance & Complaint Tracker System</strong> (Full Stack SaaS)
+     • Multi-institution campus complaint lifecycle platform with Django, DRF, PostgreSQL, React, & React Native.
+     • <a href="https://github.com/PallaviGonjari19/Grievio" target="_blank">View Grievio on GitHub ↗</a>
 
-  2. <strong>E-Learning Management Platform</strong> (Full Stack)
-     • Responsive React & Node course delivery application with quiz modules.
+  2. <strong>Cyberbullying Detection System</strong> (ML & NLP)
+     • Flask-based web application with TF-IDF and Logistic Regression text classification.
+     • <a href="https://github.com/PallaviGonjari19" target="_blank">View on GitHub ↗</a>
 
-  3. <strong>Healthcare Patient Record Management</strong> (Full Stack & DB)
-     • Secure medical dashboard with role-based auth & real-time appointment tracking.`;
+  3. <strong>Logistics Bottleneck & Delay Analyzer</strong> (Data Analytics & ML)
+     • Modeled 50,000+ delivery records with Star Schema, Logistic Regression, and Tableau.
+     • <a href="https://github.com/PallaviGonjari19/Logistics-Bottleneck-Delay-Analyzer-Data-Analytics-.git" target="_blank">View GitHub Repo ↗</a>`;
       break;
 
     case 'resume':
@@ -846,10 +865,10 @@ If your browser didn't automatically open it, click here:
     case 'contact':
       resp.innerHTML = `
 <strong>GET IN TOUCH:</strong>
-  • ✉️ Email    : <a href="mailto:gonjaripallavi19@gmail.com">gonjaripallavi19@gmail.com</a>
+  • ✉️ Email    : <a href="mailto:pallavigonjari38@gmail.com">pallavigonjari38@gmail.com</a>
   • 💼 LinkedIn : <a href="https://linkedin.com/in/pallavi-gonjari" target="_blank">linkedin.com/in/pallavi-gonjari ↗</a>
   • 🐙 GitHub   : <a href="https://github.com/PallaviGonjari19" target="_blank">github.com/PallaviGonjari19 ↗</a>
-  • 📱 Phone    : <a href="tel:+917841029199">+91 7841029199</a>`;
+  • 📱 Phone    : <a href="tel:+917559149492">+91 7559149492</a>`;
       break;
 
     case 'theme':
@@ -874,8 +893,8 @@ If your browser didn't automatically open it, click here:
 </div>
 <div style="color:#f8fafc; line-height:1.6;">
   Thank you for choosing to work together! Let's build something phenomenal.<br/>
-  Direct email: <a href="mailto:gonjaripallavi19@gmail.com">gonjaripallavi19@gmail.com</a><br/>
-  Direct phone: <a href="tel:+917841029199">+91 7841029199</a>
+  Direct email: <a href="mailto:pallavigonjari38@gmail.com">pallavigonjari38@gmail.com</a><br/>
+  Direct phone: <a href="tel:+917559149492">+91 7559149492</a>
 </div>`;
       if (window.fireConfetti) {
         window.fireConfetti(180);

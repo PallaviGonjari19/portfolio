@@ -1285,6 +1285,27 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
   white-space: nowrap;
 }
+.timeline-badge-current {
+  background: rgba(16, 185, 129, 0.14) !important;
+  border-color: rgba(16, 185, 129, 0.35) !important;
+  color: var(--green) !important;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+}
+.timeline-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text-light);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
 .timeline-bullets { list-style: none; margin-bottom: 24px; }
 .timeline-bullets li {
   color: var(--text-muted);

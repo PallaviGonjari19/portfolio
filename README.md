@@ -33,9 +33,12 @@ A modern, responsive, and interactive personal portfolio website showcasing my s
 - **📱 Fluid Mobile Responsiveness**: Smooth glassmorphic animated navigation menu and responsive typography.
 - **📄 One-Click Resume Download**: Direct download button for my up-to-date PDF resume.
 - **🚀 Featured Projects**:
-  - **Logistics Bottleneck & Delay Analyzer** (Data Analytics, Logistic Regression, Star Schema & Interactive Tableau Dashboards)
-  - **Cyberbullying Detection** (NLP, TF-IDF Text Classification & Logistic Regression with Flask)
-  - **Complaint Tracker System** (Django Full Stack, Authentication, CRUD & SQL Database)
+  - **Grievio — Campus Grievance & Complaint Tracking System** (Multi-institution multi-tenant SaaS platform with Django, DRF, PostgreSQL, React, & React Native) 👉 [GitHub Repository](https://github.com/PallaviGonjari19/Grievio)
+  - **Cyberbullying Detection System** (NLP, TF-IDF Text Classification & Logistic Regression with Flask)
+  - **Logistics Bottleneck & Delay Analyzer** (Data Analytics, Logistic Regression, Star Schema & Interactive Tableau Dashboards) 👉 [GitHub Repository](https://github.com/PallaviGonjari19/Logistics-Bottleneck-Delay-Analyzer-Data-Analytics-)
+- **💼 Work Experience**:
+  - **TechTech IT Services** — Application Trainee Intern (07/2026 – Present)
+  - **Qspiders, Wakad, Pune** — Python Full Stack Development Intern (10/2025 – 07/2026)
 - **📬 Contact & Socials**: Functional contact form with quick links to Email, LinkedIn, and GitHub.
 
 ---
